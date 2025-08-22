@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "./components/navigation";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";

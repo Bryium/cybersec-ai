@@ -1,6 +1,5 @@
-import React from "react";
 import { TrendingUp, Shield, Globe, Users } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 const ImpactSection = () => {
   const impacts = [

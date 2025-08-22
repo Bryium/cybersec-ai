@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Eye,
   Shield,
@@ -7,7 +6,7 @@ import {
   Brain,
   BarChart3,
 } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 const FeaturesSection = () => {
   const features = [

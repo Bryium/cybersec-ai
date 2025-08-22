@@ -1,6 +1,5 @@
-import React from "react";
 import { Shield, CheckCircle } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 const AboutSection = () => {
   const features = [

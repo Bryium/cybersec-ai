@@ -1,6 +1,5 @@
-import React from "react";
 import { Github, TrendingUp, Users, ArrowRight } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 import Button from "./ui/Button";
 
 const FinalCTASection = () => {

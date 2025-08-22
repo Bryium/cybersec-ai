@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowRight, Play } from "lucide-react";
 import CyberBackground from "./ui/CyberBackground";
 import Button from "./ui/Button";

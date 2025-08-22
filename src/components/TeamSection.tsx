@@ -1,5 +1,5 @@
 import { Linkedin, Github } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 const TeamSection = () => {
   const team = [
