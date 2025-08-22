@@ -1,6 +1,6 @@
 import React from "react";
 import { Shield, Activity } from "lucide-react";
-import Card from "./ui/Card";
+import Card from "./ui/card";
 
 const WhySection: React.FC = () => {
   const reasons: string[] = [

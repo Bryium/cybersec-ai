@@ -1,5 +1,11 @@
 import React from "react";
-import { Twitter, Github, Linkedin, Youtube, LucideIcon } from "lucide-react";
+import {
+  Twitter,
+  Github,
+  Linkedin,
+  Youtube,
+  type LucideIcon,
+} from "lucide-react";
 
 interface SocialLink {
   icon: LucideIcon;
