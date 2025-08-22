@@ -1,5 +1,5 @@
 import React from "react";
-import { Play, Github, Users } from "lucide-react";
+import { Github, Users } from "lucide-react";
 import Card from "./ui/Card";
 import Button from "./ui/Button";
 
@@ -20,21 +20,18 @@ const DemoSection = () => {
           </p>
         </div>
 
-        {/* Video Placeholder */}
+        {/* Embedded YouTube Video */}
         <div className="max-w-4xl mx-auto">
           <Card className="relative overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-red-600 rounded-full mb-4 hover:bg-red-500 transition-colors cursor-pointer">
-                  <Play className="w-8 h-8 text-white ml-1" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  Demo Video
-                </h3>
-                <p className="text-slate-400">
-                  Click to watch our comprehensive demo
-                </p>
-              </div>
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/vAxS3BYZ3GM"
+                title="CyberSec AI Agent Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </Card>
         </div>
@@ -51,12 +48,21 @@ const DemoSection = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="secondary" size="sm">
-                <Github className="mr-2" size={16} />
-                Contribute on GitHub
+                <a
+                  href="https://github.com/TABBY-ARUH/cybersec-Ai-Agent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Github className="mr-2" size={16} />
+                  Contribute on GitHub
+                </a>
               </Button>
               <Button variant="secondary" size="sm">
-                <Users className="mr-2" size={16} />
-                Join Discord
+                <a href="#" className="flex items-center">
+                  <Users className="mr-2" size={16} />
+                  Join Discord
+                </a>
               </Button>
             </div>
           </Card>

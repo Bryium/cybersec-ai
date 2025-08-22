@@ -32,13 +32,16 @@ const HeroSection = () => {
             />
           </Button>
 
-          <Button variant="secondary" size="lg" className="group">
-            <Play
-              className="mr-2 group-hover:scale-110 transition-transform"
-              size={20}
-            />
-            Watch Demo on YouTube
-          </Button>
+          {/* This one scrolls down to Demo Section */}
+          <a href="#demo">
+            <Button variant="secondary" size="lg" className="group">
+              <Play
+                className="mr-2 group-hover:scale-110 transition-transform"
+                size={20}
+              />
+              Watch Demo on YouTube
+            </Button>
+          </a>
         </div>
       </div>
 

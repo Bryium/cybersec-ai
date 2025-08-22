@@ -8,7 +8,7 @@ const TeamSection = () => {
       name: "Nelly Rumot",
       role: "Backend Developer",
       image: "#",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/nelly-rumot-7ba206309/",
       github: "https://github.com/TABBY-ARUH",
     },
     {
