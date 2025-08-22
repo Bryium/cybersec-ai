@@ -1,4 +1,6 @@
-const CyberBackground = () => {
+import React from "react";
+
+const CyberBackground: React.FC = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900"></div>
@@ -6,9 +8,9 @@ const CyberBackground = () => {
         className="absolute inset-0"
         style={{
           backgroundImage: `
-          linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-          linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px)
-        `,
+            linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+            linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px)
+          `,
           backgroundSize: "50px 50px",
         }}
       ></div>

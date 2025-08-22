@@ -1,8 +1,22 @@
-import { TrendingUp, Shield, Globe, Users } from "lucide-react";
+import React from "react";
+import {
+  TrendingUp,
+  Shield,
+  Globe,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
 import Card from "./ui/card";
 
-const ImpactSection = () => {
-  const impacts = [
+// Define the shape of an impact
+interface Impact {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+const ImpactSection: React.FC = () => {
+  const impacts: Impact[] = [
     {
       icon: TrendingUp,
       title: "Increases Trust",

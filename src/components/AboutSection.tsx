@@ -1,8 +1,9 @@
+import React from "react";
 import { Shield, CheckCircle } from "lucide-react";
 import Card from "./ui/card";
 
-const AboutSection = () => {
-  const features = [
+const AboutSection: React.FC = () => {
+  const features: string[] = [
     "Automated vulnerability detection",
     "Real-time AI threat analysis",
     "Certified query responses",

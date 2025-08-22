@@ -1,8 +1,9 @@
+import React from "react";
 import { Github, Users } from "lucide-react";
 import Card from "./ui/card";
 import Button from "./ui/Button";
 
-const DemoSection = () => {
+const DemoSection: React.FC = () => {
   return (
     <section id="demo" className="py-20 bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,7 +28,7 @@ const DemoSection = () => {
                 className="w-full h-full rounded-lg"
                 src="https://www.youtube.com/embed/vAxS3BYZ3GM"
                 title="CyberSec AI Agent Demo"
-                frameBorder="0"
+                frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -58,10 +59,7 @@ const DemoSection = () => {
                 </a>
               </Button>
               <Button variant="secondary" size="sm">
-                <a
-                  href="https://discord.com/channels/@chemmy"
-                  className="flex items-center"
-                >
+                <a href="#" className="flex items-center">
                   <Users className="mr-2" size={16} />
                   Join Discord
                 </a>

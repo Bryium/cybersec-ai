@@ -1,8 +1,22 @@
-import { Twitter, Github, Linkedin, Youtube } from "lucide-react";
+import React from "react";
+import { Twitter, Github, Linkedin, Youtube, LucideIcon } from "lucide-react";
 
-const Footer = () => {
-  const footerLinks = ["Home", "About", "Features", "Team", "Demo", "Contact"];
-  const socialLinks = [
+interface SocialLink {
+  icon: LucideIcon;
+  href: string;
+  label: string;
+}
+
+const Footer: React.FC = () => {
+  const footerLinks: string[] = [
+    "Home",
+    "About",
+    "Features",
+    "Team",
+    "Demo",
+    "Contact",
+  ];
+  const socialLinks: SocialLink[] = [
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
@@ -34,6 +48,8 @@ const Footer = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-400 hover:text-cyan-400 transition-colors p-2"
                 aria-label={social.label}
               >

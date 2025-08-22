@@ -1,8 +1,18 @@
+import React from "react";
 import { Linkedin, Github } from "lucide-react";
 import Card from "./ui/card";
 
-const TeamSection = () => {
-  const team = [
+// Define the shape of a team member
+interface TeamMember {
+  name: string;
+  role: string;
+  image: string;
+  linkedin: string;
+  github: string;
+}
+
+const TeamSection: React.FC = () => {
+  const team: TeamMember[] = [
     {
       name: "Nelly Rumot",
       role: "Backend Developer",
@@ -57,12 +67,16 @@ const TeamSection = () => {
               <div className="flex justify-center space-x-4">
                 <a
                   href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-slate-400 hover:text-cyan-400 transition-colors"
                 >
                   <Linkedin size={20} />
                 </a>
                 <a
                   href={member.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-slate-400 hover:text-cyan-400 transition-colors"
                 >
                   <Github size={20} />

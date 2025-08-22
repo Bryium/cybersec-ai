@@ -1,8 +1,9 @@
+import React from "react";
 import { ArrowRight, Play } from "lucide-react";
 import CyberBackground from "./ui/CyberBackground";
 import Button from "./ui/Button";
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <CyberBackground />
@@ -31,7 +32,7 @@ const HeroSection = () => {
             />
           </Button>
 
-          {/* This one scrolls down to Demo Section */}
+          {/* Scrolls down to Demo Section */}
           <a href="#demo">
             <Button variant="secondary" size="lg" className="group">
               <Play

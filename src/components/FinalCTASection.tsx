@@ -1,9 +1,24 @@
-import { Github, TrendingUp, Users, ArrowRight } from "lucide-react";
-import Card from "./ui/card";
+import React from "react";
+import {
+  Github,
+  TrendingUp,
+  Users,
+  ArrowRight,
+  LucideIcon,
+} from "lucide-react";
+import Card from "./ui/Card";
 import Button from "./ui/Button";
 
-const FinalCTASection = () => {
-  const ctas = [
+interface CTA {
+  title: string;
+  subtitle: string;
+  description: string;
+  button: string;
+  icon: LucideIcon;
+}
+
+const FinalCTASection: React.FC = () => {
+  const ctas: CTA[] = [
     {
       title: "For Developers",
       subtitle: "Integrate CyberSec AI",

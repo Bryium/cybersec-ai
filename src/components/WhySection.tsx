@@ -1,8 +1,9 @@
+import React from "react";
 import { Shield, Activity } from "lucide-react";
-import Card from "./ui/card";
+import Card from "./ui/Card";
 
-const WhySection = () => {
-  const reasons = [
+const WhySection: React.FC = () => {
+  const reasons: string[] = [
     "Blockchain adoption is accelerating, but security expertise is scarce",
     "Traditional security tools are inadequate for decentralized systems",
     "Hackers never sleep, and neither should your security",
@@ -12,6 +13,7 @@ const WhySection = () => {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Reasons */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
               Why We Built{" "}
@@ -31,6 +33,7 @@ const WhySection = () => {
             </div>
           </div>
 
+          {/* Right side - Mission Card */}
           <Card className="bg-gradient-to-br from-purple-900/30 to-cyan-900/30 border-purple-500/30">
             <div className="text-center">
               <Shield className="w-16 h-16 text-cyan-400 mx-auto mb-6" />

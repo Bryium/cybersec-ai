@@ -1,4 +1,5 @@
-import Navigation from "./components/Navigation";
+import React from "react";
+import Navigation from "./components/navigation";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import WhySecuritySection from "./components/WhySecuritySection";
@@ -10,7 +11,7 @@ import DemoSection from "./components/DemoSection";
 import FinalCTASection from "./components/FinalCTASection";
 import Footer from "./components/Footer";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-white font-sans">
       <Navigation />
@@ -26,6 +27,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

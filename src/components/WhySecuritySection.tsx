@@ -1,9 +1,23 @@
-import { AlertTriangle, Eye, Zap, Activity, Lock } from "lucide-react";
-import Card from "./ui/card";
+import React from "react";
+import {
+  AlertTriangle,
+  Eye,
+  Zap,
+  Activity,
+  Lock,
+  LucideIcon,
+} from "lucide-react";
+import Card from "./ui/Card";
 import Button from "./ui/Button";
 
-const WhySecuritySection = () => {
-  const threats = [
+interface Threat {
+  icon: LucideIcon;
+  name: string;
+  description: string;
+}
+
+const WhySecuritySection: React.FC = () => {
+  const threats: Threat[] = [
     {
       icon: AlertTriangle,
       name: "Canister exploits",
@@ -14,7 +28,11 @@ const WhySecuritySection = () => {
       name: "Phishing attacks",
       description: "Identity theft attempts",
     },
-    { icon: Zap, name: "Brute force", description: "Unauthorized access" },
+    {
+      icon: Zap,
+      name: "Brute force",
+      description: "Unauthorized access",
+    },
     {
       icon: Activity,
       name: "Cycles drain",

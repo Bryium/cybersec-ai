@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Eye,
   Shield,
@@ -5,11 +6,18 @@ import {
   FileText,
   Brain,
   BarChart3,
+  type LucideIcon,
 } from "lucide-react";
 import Card from "./ui/card";
 
-const FeaturesSection = () => {
-  const features = [
+interface Feature {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+const FeaturesSection: React.FC = () => {
+  const features: Feature[] = [
     {
       icon: Eye,
       title: "Threat Detection",
