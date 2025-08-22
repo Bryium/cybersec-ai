@@ -59,7 +59,10 @@ const DemoSection = () => {
                 </a>
               </Button>
               <Button variant="secondary" size="sm">
-                <a href="#" className="flex items-center">
+                <a
+                  href="https://discord.com/channels/@chemmy"
+                  className="flex items-center"
+                >
                   <Users className="mr-2" size={16} />
                   Join Discord
                 </a>
